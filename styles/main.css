@@ -36,10 +36,14 @@ body {
   float: left; }
   #page-heading img {
     margin-right: 2em;
-    float: left; }
+    float: left;
+    position: relative;
+    left: 15%; }
   #page-heading #heading-text {
     float: left;
-    color: #fff; }
+    color: #fff;
+    position: relative;
+    left: 15%; }
 
 #accordion-container {
   font-family: "Droid Sans";
