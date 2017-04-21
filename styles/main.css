@@ -1,12 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 body {
   background-color: #E1E2E1; }
 
-#accordion-container {
-  font-family: courier;
-  width: 70%;
+#page-heading {
+  padding: 1em;
+  background-color: #2A78DB;
   position: relative;
-  left: 10%; }
+  font-family: "Droid Sans";
+  font-size: 1.4em;
+  left: -1em;
+  top: -1em;
+  width: 100%;
+  float: left; }
+  #page-heading img {
+    margin-right: 2em;
+    float: left; }
+  #page-heading #heading-text {
+    float: left;
+    color: #fff; }
+
+#accordion-container {
+  font-family: "Droid Sans";
+  position: relative;
+  top: 2em;
+  width: 60%;
+  left: 20%;
+  float: left; }
   #accordion-container .accordion-wrap {
     margin-bottom: 0.3em;
     border-radius: 1em;

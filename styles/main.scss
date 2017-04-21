@@ -1,19 +1,43 @@
 // Main Styles
-@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 
-$font-stack: courier;
+$font-stack: 'Droid Sans';
 $main-color: #fff;
 
 body {
 	background-color: #E1E2E1;
 }
 
+#page-heading {
+	padding: 1em;
+	background-color: #2A78DB;
+	position: relative;
+	font-family: $font-stack;
+	font-size: 1.4em;
+	left: -1em;
+	top: -1em;
+	width: 100%;
+	float: left;
+
+	img {
+		margin-right: 2em;
+		float: left;
+	}
+
+	#heading-text {
+		float: left;
+		color: #fff;
+	}
+}
+
 #accordion-container {
 	
 	font-family: $font-stack;
-	width: 70%;
 	position: relative;
-	left: 10%;
+	top: 2em;
+	width: 60%;
+	left: 20%;
+	float: left;
 
 	.accordion-wrap {
 		margin-bottom: 0.3em;
