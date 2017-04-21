@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 
 $font-stack: courier;
-$main-color: #7FEAE2;
+$main-color: #fff;
+
+body {
+	background-color: #E1E2E1;
+}
 
 #accordion-container {
 	
@@ -11,10 +15,14 @@ $main-color: #7FEAE2;
 	position: relative;
 	left: 10%;
 
-	.accordion-header {
+	.accordion-wrap {
+		margin-bottom: 0.3em;
+		border-radius: 1em;
+		background-color: #fff;
+	}
+
+	.accordion-wrap .accordion-header {
 		padding: 10px;
-		background-color: $main-color;
-		border: 1px solid #49AAD3;
 		font-size: 1.5em;
 		text-align: left;
 
@@ -43,9 +51,10 @@ $main-color: #7FEAE2;
 
 	.accordion-content {
 		display: none;
-		background-color: #fff;
+		background-color: #E9EEF4;
 		padding: 10px;
 		font-size: 1.5em;
+		border-radius: 0 0 10px 10px;
 
 		p:before {
 			content: ' - ';
@@ -59,6 +68,7 @@ $main-color: #7FEAE2;
 			}
 		}
 	}
+
 
 	.display {
 		display: block;
