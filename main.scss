@@ -1,0 +1,53 @@
+// Main Styles
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+$font-stack: courier;
+$main-color: #7FEAE2;
+
+#accordion-container {
+	
+	font-family: $font-stack;
+	width: 40%;
+	position: relative;
+	left: 20%;
+
+	.accordion-header {
+		padding: 10px;
+		background-color: $main-color;
+		font-size: 1.5em;
+		text-align: left;
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+
+		}
+
+	}
+
+	.accordion-header h2:after {
+		content: ' > ';
+		position: absolute;
+		left: 90%;
+	}
+
+	.accordion-header.active h2:after {
+		content: ' > ';
+		transform: rotateZ(90deg);
+	}
+
+	.accordion-content {
+		display: none;
+		background-color: #fff;
+		padding: 10px;
+		font-size: 1.5em;
+
+		p:before {
+			content: ' - ';
+		}
+	}
+
+	.display {
+		display: block;
+	}
+}
