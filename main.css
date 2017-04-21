@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Passion+One");
 #accordion-container {
   font-family: courier;
-  width: 40%;
+  width: 70%;
   position: relative;
-  left: 20%; }
+  left: 10%; }
   #accordion-container .accordion-header {
     padding: 10px;
     background-color: #7FEAE2;
+    border: 1px solid #49AAD3;
     font-size: 1.5em;
     text-align: left; }
     #accordion-container .accordion-header:hover {
-      cursor: pointer;
-      text-decoration: underline; }
+      cursor: pointer; }
+    #accordion-container .accordion-header img {
+      float: left;
+      margin-right: 1.2em; }
   #accordion-container .accordion-header h2:after {
     content: ' > ';
     position: absolute;
@@ -26,6 +29,10 @@
     font-size: 1.5em; }
     #accordion-container .accordion-content p:before {
       content: ' - '; }
+    #accordion-container .accordion-content a {
+      text-decoration: none; }
+      #accordion-container .accordion-content a:hover {
+        text-decoration: underline; }
   #accordion-container .display {
     display: block; }
 

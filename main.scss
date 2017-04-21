@@ -7,20 +7,25 @@ $main-color: #7FEAE2;
 #accordion-container {
 	
 	font-family: $font-stack;
-	width: 40%;
+	width: 70%;
 	position: relative;
-	left: 20%;
+	left: 10%;
 
 	.accordion-header {
 		padding: 10px;
 		background-color: $main-color;
+		border: 1px solid #49AAD3;
 		font-size: 1.5em;
 		text-align: left;
 
 		&:hover {
 			cursor: pointer;
-			text-decoration: underline;
 
+		}
+
+		img {
+			float: left;
+			margin-right: 1.2em;
 		}
 
 	}
@@ -44,6 +49,14 @@ $main-color: #7FEAE2;
 
 		p:before {
 			content: ' - ';
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
