@@ -36,6 +36,12 @@ body {
 			margin-right: 1.2em;
 		}
 
+		h2 {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 	}
 
 	.accordion-header h2:after {
