@@ -17,11 +17,11 @@ body {
     text-align: left; }
     #accordion-container .accordion-wrap .accordion-header:hover {
       cursor: pointer; }
+      #accordion-container .accordion-wrap .accordion-header:hover h2 {
+        text-decoration: underline; }
     #accordion-container .accordion-wrap .accordion-header img {
       float: left;
       margin-right: 1.2em; }
-    #accordion-container .accordion-wrap .accordion-header h2:hover {
-      text-decoration: underline; }
   #accordion-container .accordion-header h2:after {
     content: ' > ';
     position: absolute;

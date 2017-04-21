@@ -29,17 +29,15 @@ body {
 		&:hover {
 			cursor: pointer;
 
+			h2 {
+				text-decoration: underline;
+			}
+
 		}
 
 		img {
 			float: left;
 			margin-right: 1.2em;
-		}
-
-		h2 {
-			&:hover {
-				text-decoration: underline;
-			}
 		}
 
 	}
