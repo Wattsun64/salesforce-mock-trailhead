@@ -9,7 +9,7 @@
 	}
 
 	function accFunction() {
-		this.nextElementSibling.classList.toggle('display');
+		this.nextElementSibling.classList.toggle('active');
 		this.classList.toggle('active');
 	}
 
