@@ -66,7 +66,6 @@ body {
 }
 
 #accordion-container {
-	
 	font-family: $font-stack;
 	position: relative;
 	top: 2em;
@@ -77,63 +76,75 @@ body {
 	.accordion-wrap {
 		margin-bottom: 0.3em;
 		border-radius: 1em;
-		background-color: #fff;
-	}
+		padding: 1em;
 
-	.accordion-wrap .accordion-header {
-		padding: 10px;
-		font-size: 1.5em;
-		text-align: left;
-
-		&:hover {
-			cursor: pointer;
-
-			h2 {
-				text-decoration: underline;
-			}
-
-		}
-
-		img {
-			float: left;
-			margin-right: 1.2em;
-		}
-
-	}
-
-	.accordion-header h2:after {
-		content: ' > ';
-		position: absolute;
-		left: 90%;
-	}
-
-	.accordion-header.active h2:after {
-		content: ' > ';
-		transform: rotateZ(90deg);
-	}
-
-	.accordion-content {
-		display: none;
-		background-color: #E9EEF4;
-		padding: 10px;
-		font-size: 1.5em;
-		border-radius: 0 0 10px 10px;
-
-		p:before {
-			content: ' - ';
-		}
-
-		a {
-			text-decoration: none;
+		.accordion-header {
+			font-size: 1.5em;
+			text-align: left;
+			background-color: #fff;
+			border-radius: 10px 10px 0 0;
+			padding: 1em;
 
 			&:hover {
-				text-decoration: underline;
+				cursor: pointer;
+
+				h2 {
+					text-decoration: underline;
+				}
+			}
+
+			&.active {
+				background-color: #f2f2f2;
+
+				h2 {
+
+					&:after {
+						transform: rotateZ(90deg)
+					}
+				}
+			}
+
+			h2 {
+
+				&:after {
+					content: ' > ';
+					position: absolute;
+					left: 90%;
+					transition: all 0.3s ease-in-out;
+				}
+			}
+
+			img {
+				float: left;
+				margin-right: 1.2em;
+			}
+		}
+
+		.accordion-content {
+			max-height: 0;
+			overflow: hidden;
+			background-color: #fff;
+			padding: 10px 10px 0 10px;
+			font-size: 1.5em;
+			border-radius: 0 0 10px 10px;
+			transition: all 0.3s ease-in-out;
+
+			&.active {
+				max-height: 20em;
+			}
+
+			p:before {
+				content: ' - '
+			}
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
-
-
-	.display {
-		display: block;
-	}
 }
+	

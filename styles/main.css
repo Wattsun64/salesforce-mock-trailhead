@@ -55,38 +55,44 @@ body {
   #accordion-container .accordion-wrap {
     margin-bottom: 0.3em;
     border-radius: 1em;
-    background-color: #fff; }
-  #accordion-container .accordion-wrap .accordion-header {
-    padding: 10px;
-    font-size: 1.5em;
-    text-align: left; }
-    #accordion-container .accordion-wrap .accordion-header:hover {
-      cursor: pointer; }
-      #accordion-container .accordion-wrap .accordion-header:hover h2 {
-        text-decoration: underline; }
-    #accordion-container .accordion-wrap .accordion-header img {
-      float: left;
-      margin-right: 1.2em; }
-  #accordion-container .accordion-header h2:after {
-    content: ' > ';
-    position: absolute;
-    left: 90%; }
-  #accordion-container .accordion-header.active h2:after {
-    content: ' > ';
-    transform: rotateZ(90deg); }
-  #accordion-container .accordion-content {
-    display: none;
-    background-color: #E9EEF4;
-    padding: 10px;
-    font-size: 1.5em;
-    border-radius: 0 0 10px 10px; }
-    #accordion-container .accordion-content p:before {
-      content: ' - '; }
-    #accordion-container .accordion-content a {
-      text-decoration: none; }
-      #accordion-container .accordion-content a:hover {
-        text-decoration: underline; }
-  #accordion-container .display {
-    display: block; }
+    padding: 1em; }
+    #accordion-container .accordion-wrap .accordion-header {
+      font-size: 1.5em;
+      text-align: left;
+      background-color: #fff;
+      border-radius: 10px 10px 0 0;
+      padding: 1em; }
+      #accordion-container .accordion-wrap .accordion-header:hover {
+        cursor: pointer; }
+        #accordion-container .accordion-wrap .accordion-header:hover h2 {
+          text-decoration: underline; }
+      #accordion-container .accordion-wrap .accordion-header.active {
+        background-color: #f2f2f2; }
+        #accordion-container .accordion-wrap .accordion-header.active h2:after {
+          transform: rotateZ(90deg); }
+      #accordion-container .accordion-wrap .accordion-header h2:after {
+        content: ' > ';
+        position: absolute;
+        left: 90%;
+        transition: all 0.3s ease-in-out; }
+      #accordion-container .accordion-wrap .accordion-header img {
+        float: left;
+        margin-right: 1.2em; }
+    #accordion-container .accordion-wrap .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 10px 10px 0 10px;
+      font-size: 1.5em;
+      border-radius: 0 0 10px 10px;
+      transition: all 0.3s ease-in-out; }
+      #accordion-container .accordion-wrap .accordion-content.active {
+        max-height: 20em; }
+      #accordion-container .accordion-wrap .accordion-content p:before {
+        content: " - "; }
+      #accordion-container .accordion-wrap .accordion-content a {
+        text-decoration: none; }
+        #accordion-container .accordion-wrap .accordion-content a:hover {
+          text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
